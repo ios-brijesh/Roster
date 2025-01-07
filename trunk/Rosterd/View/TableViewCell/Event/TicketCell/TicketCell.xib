@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="287" id="KGk-i7-Jjw" customClass="TicketCell" customModule="Rosterd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="541" height="287"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="541" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5I-uU-Zh8">
+                        <rect key="frame" x="0.0" y="10" width="531" height="250"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-Ig-Qa5">
+                                <rect key="frame" x="0.0" y="0.0" width="531" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="96B-Qp-TZN">
+                                        <rect key="frame" x="20" y="20" width="491" height="210"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-4b-oYa" customClass="TextReusableView" customModule="Rosterd" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="491" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="M05-cF-Tqz"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Ticket Name"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Keyboard">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardReturnType">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="txtInputPadding">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboard">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JR-M4-vFQ" customClass="TextReusableView" customModule="Rosterd" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="75" width="491" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="TSz-nh-oFn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Ticket Price"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Keyboard">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardReturnType">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="txtInputPadding">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboard">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd9-tU-NS0" customClass="TextReusableView" customModule="Rosterd" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="150" width="491" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="lUt-nH-zi0"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Ticket Quantity"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="Keyboard">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboardReturnType">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="txtInputPadding">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="keyboard">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="96B-Qp-TZN" secondAttribute="trailing" constant="20" id="8pC-ch-SUu"/>
+                                    <constraint firstAttribute="bottom" secondItem="96B-Qp-TZN" secondAttribute="bottom" constant="20" id="K5L-MF-eUk"/>
+                                    <constraint firstItem="96B-Qp-TZN" firstAttribute="top" secondItem="fj5-Ig-Qa5" secondAttribute="top" constant="20" id="bqa-IS-yNx"/>
+                                    <constraint firstItem="96B-Qp-TZN" firstAttribute="leading" secondItem="fj5-Ig-Qa5" secondAttribute="leading" constant="20" id="on9-YE-QCl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFw-hx-Ofq">
+                                <rect key="frame" x="513" y="-10" width="28" height="28"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_Cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fj5-Ig-Qa5" firstAttribute="leading" secondItem="r5I-uU-Zh8" secondAttribute="leading" id="DiL-qb-CFn"/>
+                            <constraint firstAttribute="bottom" secondItem="fj5-Ig-Qa5" secondAttribute="bottom" id="exU-r3-8G8"/>
+                            <constraint firstItem="fj5-Ig-Qa5" firstAttribute="top" secondItem="r5I-uU-Zh8" secondAttribute="top" id="qnE-jF-znX"/>
+                            <constraint firstItem="QFw-hx-Ofq" firstAttribute="top" secondItem="r5I-uU-Zh8" secondAttribute="top" constant="-10" id="uAi-5f-RD7"/>
+                            <constraint firstAttribute="trailing" secondItem="fj5-Ig-Qa5" secondAttribute="trailing" id="wbM-MZ-5GN"/>
+                            <constraint firstAttribute="trailing" secondItem="QFw-hx-Ofq" secondAttribute="trailing" constant="-10" id="x3l-vo-UFr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="r5I-uU-Zh8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4fy-T0-W0Y"/>
+                    <constraint firstAttribute="trailing" secondItem="r5I-uU-Zh8" secondAttribute="trailing" constant="10" id="Q7P-4G-2MA"/>
+                    <constraint firstAttribute="bottom" secondItem="r5I-uU-Zh8" secondAttribute="bottom" id="tnD-te-xai"/>
+                    <constraint firstItem="r5I-uU-Zh8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="y5p-Iu-qeX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnCancel" destination="QFw-hx-Ofq" id="3o6-Uc-nwT"/>
+                <outlet property="vwMainView" destination="fj5-Ig-Qa5" id="vo8-PY-fw1"/>
+                <outlet property="vwTicketName" destination="hNE-4b-oYa" id="Zsu-iP-4m7"/>
+                <outlet property="vwTicketPrice" destination="5JR-M4-vFQ" id="nQy-kk-hh8"/>
+                <outlet property="vwTicketSeat" destination="Cd9-tU-NS0" id="ceJ-QU-cuS"/>
+            </connections>
+            <point key="canvasLocation" x="290.57971014492756" y="166.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Cancel" width="28" height="28"/>
+    </resources>
+</document>

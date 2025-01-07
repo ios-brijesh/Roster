@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InformationCell" customModule="Rosterd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="206"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QkM-uN-J8f">
+                        <rect key="frame" x="0.0" y="0.0" width="469" height="206"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kuO-mC-aZc">
+                                <rect key="frame" x="10" y="0.0" width="444" height="206"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1W-rc-n2j">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="206"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gYU-jn-9hf">
+                                                <rect key="frame" x="15" y="47" width="207" height="112"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catagory" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-6S-Rml">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDi-hX-n0T">
+                                                        <rect key="frame" x="0.0" y="30.5" width="207" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sportswear" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elq-3j-Km7">
+                                                        <rect key="frame" x="0.0" y="61" width="207" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$29.99" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8O-MJ-8Df">
+                                                        <rect key="frame" x="0.0" y="91.5" width="207" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gYU-jn-9hf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="L1W-rc-n2j" secondAttribute="top" constant="20" id="4XN-Fw-YWz"/>
+                                            <constraint firstItem="gYU-jn-9hf" firstAttribute="leading" secondItem="L1W-rc-n2j" secondAttribute="leading" constant="15" id="HiQ-jY-CXH"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gYU-jn-9hf" secondAttribute="bottom" id="Yjk-5d-qaw"/>
+                                            <constraint firstAttribute="trailing" secondItem="gYU-jn-9hf" secondAttribute="trailing" id="bWc-ox-uk6"/>
+                                            <constraint firstItem="gYU-jn-9hf" firstAttribute="centerY" secondItem="L1W-rc-n2j" secondAttribute="centerY" id="knF-rf-WgP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-DZ-4Yh">
+                                        <rect key="frame" x="222" y="0.0" width="222" height="206"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoInformation_img" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-No-y1w">
+                                                <rect key="frame" x="0.0" y="30" width="222" height="176"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hrV-No-y1w" secondAttribute="trailing" id="7c1-N8-d6A"/>
+                                            <constraint firstAttribute="bottom" secondItem="hrV-No-y1w" secondAttribute="bottom" id="T7S-qt-20f"/>
+                                            <constraint firstItem="hrV-No-y1w" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gmg-DZ-4Yh" secondAttribute="leading" id="juQ-N4-crF"/>
+                                            <constraint firstItem="hrV-No-y1w" firstAttribute="top" secondItem="Gmg-DZ-4Yh" secondAttribute="top" constant="30" id="pvK-mv-N9c"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kuO-mC-aZc" secondAttribute="bottom" id="GN5-hK-DfA"/>
+                            <constraint firstAttribute="trailing" secondItem="kuO-mC-aZc" secondAttribute="trailing" constant="15" id="K9Y-1L-T8Q"/>
+                            <constraint firstItem="kuO-mC-aZc" firstAttribute="leading" secondItem="QkM-uN-J8f" secondAttribute="leading" constant="10" id="Smh-Xr-PWv"/>
+                            <constraint firstItem="kuO-mC-aZc" firstAttribute="top" secondItem="QkM-uN-J8f" secondAttribute="top" id="mtg-TE-OXD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QkM-uN-J8f" secondAttribute="trailing" id="LaD-V5-GCF"/>
+                <constraint firstItem="QkM-uN-J8f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bjg-i3-iXv"/>
+                <constraint firstAttribute="bottom" secondItem="QkM-uN-J8f" secondAttribute="bottom" id="yTA-0X-G42"/>
+                <constraint firstItem="QkM-uN-J8f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yi7-4T-aqa"/>
+            </constraints>
+            <size key="customSize" width="469" height="206"/>
+            <connections>
+                <outlet property="imgProduct" destination="hrV-No-y1w" id="WSC-vA-4cn"/>
+                <outlet property="lblBrandName" destination="gDi-hX-n0T" id="pZF-3Z-8eJ"/>
+                <outlet property="lblBrandType" destination="elq-3j-Km7" id="MQo-8P-p0N"/>
+                <outlet property="lblCategory" destination="YZd-6S-Rml" id="xQ5-kr-vcd"/>
+                <outlet property="lblPrice" destination="m8O-MJ-8Df" id="ZxY-WT-6K2"/>
+                <outlet property="vwMainView" destination="QkM-uN-J8f" id="j2u-OR-Edn"/>
+            </connections>
+            <point key="canvasLocation" x="416.66666666666669" y="101.11607142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demoInformation_img" width="272" height="196"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Rosterd' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Rosterd
+   pod 'Alamofire'
+  pod 'IQKeyboardManager'
+  pod 'SDWebImage'
+
+  pod 'LGSideMenuController','2.1.1'
+  pod 'UITextView+Placeholder'
+  pod 'ActionSheetPicker-3.0'
+  
+  pod 'ActiveLabel'
+
+  # Navigation
+  pod 'ViewControllerDescribable'
+  pod 'CollectionViewPagingLayout'
+  pod 'ChameleonFramework/Swift'
+  
+  #FireBase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Messaging'
+  
+  #PullToRefresh
+  pod 'ESPullToRefresh'
+  
+  #Chat
+  pod 'Starscream'
+  # Dependency Injection/Container
+  #pod 'GooglePlaces'
+  pod 'Dip'
+  pod 'R.swift'
+  
+  #Google
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+  pod 'GoogleSignIn'
+  
+  #message
+  pod 'SwiftMessages' 
+
+  #FSPagerView
+  pod 'FSPagerView'
+
+  #FB
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+
+  #Loader
+  pod 'SVProgressHUD'
+
+ #Image
+  pod 'TLPhotoPicker'
+  pod 'YPImagePicker'
+  pod 'Cosmos' 
+  pod 'Lightbox'
+
+ #pod 'BubblePictures'
+ pod "TTRangeSlider"
+  pod 'OnlyPictures'
+ pod 'CardScanner','0.1.2'
+ #In App Purchase
+ pod 'SwiftyStoreKit'
+ # pod 'SwiftyCam'
+ # pod 'CocoaDebug'#, :configurations => ['Debug']
+
+  target 'RosterdTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RosterdUITests' do
+    # Pods for testing
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.build_configurations.each do |config|
+    config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+  end
+  
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      end
+    end
+  end
+end
+

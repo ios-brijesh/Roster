@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="0.0" id="KGk-i7-Jjw" customClass="TicketChatHeaderCell" customModule="Rosterd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="593" height="417"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="593" height="417"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6R-LL-hds">
+                        <rect key="frame" x="0.0" y="0.0" width="593" height="186.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7um-Kz-k8w">
+                                <rect key="frame" x="0.0" y="10" width="593" height="156.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saN-0E-g5R">
+                                        <rect key="frame" x="0.0" y="0.0" width="593" height="106.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Ticket title goes here.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-wp-KOu">
+                                                <rect key="frame" x="0.0" y="0.0" width="593" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiQ-9g-t7A">
+                                                <rect key="frame" x="0.0" y="56" width="593" height="50.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="CiQ-9g-t7A" secondAttribute="bottom" id="1RJ-8a-7dI"/>
+                                            <constraint firstItem="DdS-wp-KOu" firstAttribute="leading" secondItem="saN-0E-g5R" secondAttribute="leading" id="PfM-gf-vNC"/>
+                                            <constraint firstAttribute="trailing" secondItem="CiQ-9g-t7A" secondAttribute="trailing" id="VAU-iv-bZy"/>
+                                            <constraint firstAttribute="trailing" secondItem="DdS-wp-KOu" secondAttribute="trailing" id="d2C-p6-8eb"/>
+                                            <constraint firstItem="DdS-wp-KOu" firstAttribute="top" secondItem="saN-0E-g5R" secondAttribute="top" id="hpK-Mp-EAG"/>
+                                            <constraint firstItem="CiQ-9g-t7A" firstAttribute="leading" secondItem="saN-0E-g5R" secondAttribute="leading" id="lXG-PG-uAz"/>
+                                            <constraint firstItem="CiQ-9g-t7A" firstAttribute="top" secondItem="DdS-wp-KOu" secondAttribute="bottom" id="qjg-Hu-OF1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vez-gZ-6KH">
+                                        <rect key="frame" x="0.0" y="106.5" width="593" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket ID : 321545" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNJ-Qa-mYY">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="xNJ-Qa-mYY" firstAttribute="leading" secondItem="vez-gZ-6KH" secondAttribute="leading" id="SUT-bE-wRP"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xNJ-Qa-mYY" secondAttribute="trailing" id="aQ1-cN-Qf9"/>
+                                            <constraint firstItem="xNJ-Qa-mYY" firstAttribute="top" secondItem="vez-gZ-6KH" secondAttribute="top" id="gAK-3E-cRA"/>
+                                            <constraint firstAttribute="bottom" secondItem="xNJ-Qa-mYY" secondAttribute="bottom" id="lDQ-GA-Rhh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vez-gZ-6KH" firstAttribute="leading" secondItem="7um-Kz-k8w" secondAttribute="leading" id="3ue-7t-TUF"/>
+                                    <constraint firstAttribute="trailing" secondItem="saN-0E-g5R" secondAttribute="trailing" id="4U4-46-Peh"/>
+                                    <constraint firstAttribute="trailing" secondItem="vez-gZ-6KH" secondAttribute="trailing" id="YG9-mI-Bub"/>
+                                    <constraint firstItem="saN-0E-g5R" firstAttribute="leading" secondItem="7um-Kz-k8w" secondAttribute="leading" id="dc3-nf-ROH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7um-Kz-k8w" firstAttribute="top" secondItem="Z6R-LL-hds" secondAttribute="top" constant="10" id="05Y-Nk-W49"/>
+                            <constraint firstAttribute="bottom" secondItem="7um-Kz-k8w" secondAttribute="bottom" constant="20" id="39L-vn-6uX"/>
+                            <constraint firstItem="7um-Kz-k8w" firstAttribute="leading" secondItem="Z6R-LL-hds" secondAttribute="leading" id="L6v-8x-PYz"/>
+                            <constraint firstAttribute="trailing" secondItem="7um-Kz-k8w" secondAttribute="trailing" id="kV5-f0-hoF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Z6R-LL-hds" secondAttribute="bottom" constant="13.5" id="1Cg-wp-zmw"/>
+                    <constraint firstItem="Z6R-LL-hds" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CiT-dp-AAw"/>
+                    <constraint firstItem="Z6R-LL-hds" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PYf-Tn-8LR"/>
+                    <constraint firstAttribute="trailing" secondItem="Z6R-LL-hds" secondAttribute="trailing" id="xSx-lT-bpg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblTicketStatus" destination="CiQ-9g-t7A" id="A6p-S7-Crr"/>
+                <outlet property="lblTicketTitle" destination="DdS-wp-KOu" id="rYm-ti-wyx"/>
+                <outlet property="lblTicketid" destination="xNJ-Qa-mYY" id="KNS-rC-xCV"/>
+                <outlet property="vwMainContent" destination="Z6R-LL-hds" id="9hx-DC-uos"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="12"/>
+        </tableViewCell>
+    </objects>
+</document>

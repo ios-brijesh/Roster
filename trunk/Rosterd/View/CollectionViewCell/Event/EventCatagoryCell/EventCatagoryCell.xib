@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventCatagoryCell" customModule="Rosterd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asM-Ex-0n8">
+                        <rect key="frame" x="0.0" y="0.0" width="309" height="87"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-FU-kcT">
+                                <rect key="frame" x="0.0" y="0.0" width="309" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lHr-FU-kcT" secondAttribute="trailing" id="EXg-tc-28m"/>
+                            <constraint firstItem="lHr-FU-kcT" firstAttribute="top" secondItem="asM-Ex-0n8" secondAttribute="top" id="Mpj-KI-ewm"/>
+                            <constraint firstItem="lHr-FU-kcT" firstAttribute="leading" secondItem="asM-Ex-0n8" secondAttribute="leading" id="p1t-iV-W5G"/>
+                            <constraint firstAttribute="bottom" secondItem="lHr-FU-kcT" secondAttribute="bottom" id="q9u-8t-h7W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="asM-Ex-0n8" secondAttribute="bottom" id="fez-DG-392"/>
+                <constraint firstItem="asM-Ex-0n8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wkq-e1-g3u"/>
+                <constraint firstItem="asM-Ex-0n8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xRM-vl-LIQ"/>
+                <constraint firstAttribute="trailing" secondItem="asM-Ex-0n8" secondAttribute="trailing" id="yQ7-AF-i4A"/>
+            </constraints>
+            <size key="customSize" width="309" height="87"/>
+            <connections>
+                <outlet property="lblCategoryName" destination="lHr-FU-kcT" id="jy0-Ir-ekw"/>
+            </connections>
+            <point key="canvasLocation" x="319.56521739130437" y="102.12053571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

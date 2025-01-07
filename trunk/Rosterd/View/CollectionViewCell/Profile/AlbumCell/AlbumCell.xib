@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AlbumCell" customModule="Rosterd" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Y-9i-Hct">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demoFeed2" translatesAutoresizingMaskIntoConstraints="NO" id="5bd-vZ-1ql">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQy-r3-9KI">
+                                <rect key="frame" x="76" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BQy-r3-9KI" secondAttribute="height" multiplier="1:1" id="JW4-nB-BtH"/>
+                                    <constraint firstAttribute="height" constant="30" id="djc-dT-HY0"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_Cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5bd-vZ-1ql" secondAttribute="trailing" id="0nE-gI-9iG"/>
+                            <constraint firstAttribute="bottom" secondItem="5bd-vZ-1ql" secondAttribute="bottom" id="1RU-YM-rmi"/>
+                            <constraint firstItem="5bd-vZ-1ql" firstAttribute="leading" secondItem="Q1Y-9i-Hct" secondAttribute="leading" id="DVh-rE-KDk"/>
+                            <constraint firstItem="5bd-vZ-1ql" firstAttribute="top" secondItem="Q1Y-9i-Hct" secondAttribute="top" id="UMN-06-fKc"/>
+                            <constraint firstItem="BQy-r3-9KI" firstAttribute="top" secondItem="Q1Y-9i-Hct" secondAttribute="top" id="Wxb-E8-D7b"/>
+                            <constraint firstAttribute="trailing" secondItem="BQy-r3-9KI" secondAttribute="trailing" id="gBR-FR-BaI"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC2-5r-Iqi">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-A3-yMc">
+                                <rect key="frame" x="0.0" y="0.0" width="106" height="101"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_Camraicon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wz5-A3-yMc" firstAttribute="leading" secondItem="cC2-5r-Iqi" secondAttribute="leading" id="105-Hm-Kdk"/>
+                            <constraint firstAttribute="bottom" secondItem="Wz5-A3-yMc" secondAttribute="bottom" id="8iV-wZ-39Y"/>
+                            <constraint firstItem="Wz5-A3-yMc" firstAttribute="top" secondItem="cC2-5r-Iqi" secondAttribute="top" id="jCV-J6-aZD"/>
+                            <constraint firstAttribute="trailing" secondItem="Wz5-A3-yMc" secondAttribute="trailing" id="plQ-zQ-Bud"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cC2-5r-Iqi" secondAttribute="bottom" id="0FU-dk-6Vf"/>
+                <constraint firstAttribute="bottom" secondItem="Q1Y-9i-Hct" secondAttribute="bottom" id="1AL-3O-ias"/>
+                <constraint firstAttribute="trailing" secondItem="Q1Y-9i-Hct" secondAttribute="trailing" id="8IS-VO-lqd"/>
+                <constraint firstAttribute="trailing" secondItem="cC2-5r-Iqi" secondAttribute="trailing" id="Ixe-PF-tCS"/>
+                <constraint firstItem="Q1Y-9i-Hct" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zsi-zQ-qJb"/>
+                <constraint firstItem="Q1Y-9i-Hct" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cyQ-vG-sGq"/>
+                <constraint firstItem="cC2-5r-Iqi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="czo-xa-Oy9"/>
+                <constraint firstItem="cC2-5r-Iqi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i62-Sh-m0Q"/>
+            </constraints>
+            <size key="customSize" width="106" height="101"/>
+            <connections>
+                <outlet property="btnAdd" destination="Wz5-A3-yMc" id="SxX-zu-epC"/>
+                <outlet property="btncancel" destination="BQy-r3-9KI" id="5Ji-7b-BLs"/>
+                <outlet property="imgFeed" destination="5bd-vZ-1ql" id="P3N-Jn-Kq8"/>
+                <outlet property="vwAddview" destination="cC2-5r-Iqi" id="jfb-Ph-95O"/>
+                <outlet property="vwMain" destination="Q1Y-9i-Hct" id="nRU-a0-XBy"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="99.441964285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demoFeed2" width="375" height="375"/>
+        <image name="ic_Camraicon" width="31.5" height="24"/>
+        <image name="ic_Cancel" width="28" height="28"/>
+    </resources>
+</document>
